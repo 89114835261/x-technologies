@@ -33,6 +33,9 @@
         &:hover {
             cursor: pointer;
         }
+        &:nth-child(4) {
+            margin: 0 24px 0 80px;
+        }
     }
 }
 
