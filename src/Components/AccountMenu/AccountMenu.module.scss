@@ -1,0 +1,74 @@
+@import './../Styles/box';
+@import './../../fonts/Gilroy/gilroy.css';  
+@import './../../fonts/Roboto/roboto.css';
+
+.menu {
+    @include box;
+    padding: 24px;
+    width: 200px;
+    right: -10px;
+    margin: -10px 0 0 0;
+    position: absolute;
+    z-index: 5;
+    &:hover {
+        cursor: default;
+    }
+    H4 {
+        font-family: 'Gilroy';
+        font-weight: bold;  
+        color: #3E445B;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0;
+        padding: 0;
+    }
+    .cash {
+        font-family: 'Roboto';
+        font-weight: normal;
+        color: #A8AAB5;
+        padding: 0 25px 0 0;
+        line-height: 28px;
+        margin: 0;
+        position: relative;
+        IMG {
+            position: absolute;
+            top: 2px;
+            right: 0;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    UL {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    LI {
+        font-family: 'Gilroy';
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.04em;
+        list-style-position: inside;
+        position: relative;
+        color: #3E445B;
+        margin: 24px 0 0 0;
+        SPAN {
+            position: absolute;
+            top: 3px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+        &:first-child {
+            list-style-image: url('./../../img/icons/setKey.jpg');
+        }
+        &:nth-child(2) {
+            list-style-image: url('./../../img/icons/set_pin_code.jpg');
+        }
+        &:last-child {
+            list-style-image: url('./../../img/icons/logOut.jpg');
+        }
+    }
+}

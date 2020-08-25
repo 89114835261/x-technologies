@@ -1,6 +1,6 @@
 @import './../Styles/box';
-@import './../../fonts/Roboto/roboto_thin.css';
-@import './../../fonts/Gilroy/gilroy-bold.css';
+@import './../../fonts/Roboto/roboto.css';
+@import './../../fonts/Gilroy/gilroy.css';
 
 .resources {
     @include box;
@@ -8,7 +8,7 @@
     padding: 24px;
     position: relative;
     H4 {
-        font-family: 'Gilroy-Bold';
+        font-family: 'Gilroy';
         margin: 0;
         padding: 0;
         font-size: 16px;
@@ -22,7 +22,7 @@
         flex-flow: row nowrap;
         margin: 12px 0 0 0;
         .name {
-            font-family: 'Gilroy-Bold';
+            font-family: 'Gilroy';
             padding: 13px 0 0 0;
             width: 90px;
             font-size: 20px;
@@ -33,11 +33,12 @@
 .statistic {
     display: flex;
     flex-flow: column wrap;
-    font-family: 'Roboto Thin';
+    font-family: 'Roboto';
     margin: 0 0 0 18px;
     padding: 2px 0 0 0;
     P {
-        font-family: 'Gilroy-Bold';
+        font-family: 'Gilroy';
+        font-weight: bold;
         margin: 0;
         padding: 0;
         font-size: 20px;
@@ -46,6 +47,13 @@
     SPAN {
         color: #8B8F9D;
         font-size: 16px;
+        .symbols {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+        }
         P {
             margin: 0;
             padding: 0;

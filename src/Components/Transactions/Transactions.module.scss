@@ -1,43 +1,53 @@
 @import './../Styles/box';
-@import './../../fonts/Gilroy/gilroy-bold.css';
-@import './../../fonts/Roboto/roboto_thin.css';
+@import './../../fonts/Gilroy/gilroy.css';
+@import './../../fonts/Roboto/roboto.css';
 
 .wrapper {
     margin: 0 56px 0 56px;
     width: 744px;
     position: relative;
+    z-index: 1;
     H3 {
-        font-family: 'Gilroy-Bold';
+        font-family: 'Gilroy';
         color: #4F4F4F;
-        margin: 0;
+        margin: 0 0 0 40px;
     }
 }
 
 .menu {
-    height: 25px;
+    height: 27px;
     display: flex;
     flex-flow: row nowrap;
     position: absolute;
-    top: 44px;
+    top: 49px;
+    padding: 0 0 0 40px;
+    z-index: 3;
     SPAN {
-        font-family: 'Gilroy-Bold';
+        font-family: 'Gilroy';
+        font-weight: bold;
         color: #3E445B;
         font-size: 14px;
         margin: 0 24px 0 0;
-        padding: 0 0 0 42px;
+        padding: 0;
+        border-radius: 3px;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
 .transactions {
     @include box;
-    margin: 45px 0 0 0;
+    margin: 50px 0 0 0;
     position: relative;
-    padding: 32px 0 0 42px;
+    padding: 32px 40px 0 42px;
+    z-index: 2;
 }
 
 .listTitle {
     display: flex;
     flex-flow: row nowrap;
+    font-weight: bold;
     :nth-child(2) {
         margin: 0 0 0 20px;
     }
@@ -45,13 +55,12 @@
         margin: 0 0 0 154px;
     }
     :nth-child(4) {
-        margin: 0 0 0 220px;
+        margin: 0 0 0 230px;
     }
     SPAN {
-        font-family: 'Gilroy-Bold';
+        font-family: 'Gilroy';
         font-size: 14px;
         color: #9FA2AE;
-        
     }
 }
 
@@ -72,9 +81,43 @@
         background-image: url('./../../img/icons/out.jpg');
     }
     SPAN {
-        font-family: 'Roboto Thin';
+        font-family: 'Roboto';
+        position: relative;
+        .time {
+            color: #9FA2AE;
+        }
         &:first-child {
             margin: 0 34px 0 0;
+        }
+        font-size: 14px;
+        &:nth-child(3) {
+            padding: 0 0 0 28px;
+            IMG {
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: solid 1px rgba(52, 48, 39, 0.1);
+            }
+            P {
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                overflow: hidden;
+            }
+            margin: 0 0 0 84px;
+        }
+        &:nth-child(4) {
+            flex-grow: 1;
+            text-align: right;
+            font-weight: bold;
+            font-size: 14px;
+            color: #9FA2AE;
+        }
+        P {
+            display: inline;
         }
     }
 }

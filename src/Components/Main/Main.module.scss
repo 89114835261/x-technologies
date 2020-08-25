@@ -1,40 +1,51 @@
 .wrapper {
-    display: grid;
-    width: 1600px;
-    grid-template-areas: 
-    "header header"
-    "leftSide content"
-    "footer footer";
-    grid-template-rows: 80px auto 80px;
-    grid-template-columns: 240px auto;
-    margin: 0 auto;
+    height: 100%;
 }
 
 .header {
+    height: 80px;
     grid-area: header;
     background-color: #fff;
-    z-index: 2;
-    padding: 0 60px 0 60px;
     box-shadow: 0 1.49px 1.54px rgba(0, 0, 0, 0.02), 0 9.95px 10.25px rgba(0, 0, 0, 0.03);
+    z-index: 4;
+    position: relative;
+    width: 100%;
+    min-width: 1600px;
+    .wrapper {
+        width: 1480px;
+        margin: 0 auto;
+        padding: 0 60px 0 60px;
+    }
+}
+
+.contentWrapper {
+    width: 1600px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    z-index: 1;
 }
 
 .leftSide {
-    grid-area: leftSide;
     background-color: #fff;
     padding: 0 0 0 60px;
-    z-index: 1;
-    border-right: solid 1px rgba(62, 68, 91, 0.1)
+    border-right: solid 1px rgba(62, 68, 91, 0.1);
+    width: 240px;
 }
 
 .content {
     grid-area: content;
-    background-color: #f9f9f9;
-    padding: 40px;
+    padding: 40px 0 40px 40px;
     display: flex;
     flex-flow: row nowrap;
 }
 
 .footer {
-    grid-area: footer;
     background-color: #F3F4F4;
+    height: 80px;
+    z-index: 15;
+    width: 100%;
+    min-width: 1600px;
+    position: relative;
 }

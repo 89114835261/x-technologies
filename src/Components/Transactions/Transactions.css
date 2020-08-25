@@ -1,0 +1,15 @@
+.in {
+    color: #27AE60;
+}
+
+.out {
+    color: #3E445B;
+}
+
+.cbs {
+    padding: 0 20px 0 0;
+}
+
+.active {
+    border-bottom: solid 3px #F8A303;
+}

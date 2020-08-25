@@ -1,31 +1,50 @@
-@import './../../fonts/Gilroy/gilroy-bold.css';
+@import './../../fonts/Gilroy/gilroy.css';
 
-UL {
+UL.menu {
     list-style: none;
     margin: 0;
     padding: 0;
     LI {
-        font-family: 'Gilroy-Bold';
-        font-size: 17px;
+        font-family: 'Gilroy';
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 0.04em;
+        font-size: 14px;
+        line-height: 17px;
         margin: 50px 0 0 0;
         padding: 0;
         position: relative;
         color: #3E445B;
+        &:hover {
+            cursor: pointer;
+        }
         SPAN {
             position: absolute;
-            top: 0;
+            top: 3px;
         }
         &:first-child {
             list-style: url('./../../img/menu/wallet.jpg') inside;
         }
         &:nth-child(2){
             list-style: url('./../../img/menu/staked.jpg') inside;
+            color: #B2B4BD;
+            &:hover {
+                color:#3E445B;
+            }
         }
         &:nth-child(3){
             list-style: url('./../../img/menu/ambasdors.jpg') inside;
+            color: #E3E3E7;
+            &:hover {
+                cursor: default;
+            }
         }
         &:nth-child(4){
             list-style: url('./../../img/menu/followers.jpg') inside;
+            color: #E3E3E7;
+            &:hover {
+                cursor: default;
+            }
         }
     }
 }

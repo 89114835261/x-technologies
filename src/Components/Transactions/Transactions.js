@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './Transactions.module.scss';
+import './Transactions.css';
 
 const Transactions = (props) => {
+    const [ tabInOut, setTabInOut ] = useState('All');
+    const [ tabCurrency, setTabCurrency ] = useState('All');
+
+    const tabInOutArray = ['All', 'In', 'Out'];
+    const tabCurrencyArray = ['All', 'CBS', 'CBSCH'];
+
     const transactions = props.transactions.map(item => {
-        return <div key={item.id} className={style.element}>
-            <span className={item.in ? style.in : style.out}></span>
-            <span>{item.date} &bull; {item.time}</span>
-            <span>{item.name}</span>
-            <span>{item.in ? '+ ' : '- '} {item.balance}</span>
-        </div>
+        if(tabInOut === 'In') return props.sortTransactions(item, item.in, true, tabCurrency, props.elementTransactions, style)
+        else if(tabInOut === 'Out') return props.sortTransactions(item, item.in, false, tabCurrency, props.elementTransactions, style)
+        else return props.sortTransactions(item, true, true, tabCurrency, props.elementTransactions, style)
     })
 
     return(
@@ -16,12 +20,8 @@ const Transactions = (props) => {
             <h3>Transactions</h3>
            
                 <div className={style.menu}>
-                    <span>All</span>
-                    <span>In</span>
-                    <span>Out</span>
-                    <span>All</span>
-                    <span>CBS</span>
-                    <span>CBSCH</span>
+                    {props.changeTabsTransactions(tabInOutArray, tabInOut, setTabInOut)}
+                    {props.changeTabsTransactions(tabCurrencyArray, tabCurrency, setTabCurrency)}
                 </div>
                 <div className={style.transactions}>
                     <div className={style.listTitle}>

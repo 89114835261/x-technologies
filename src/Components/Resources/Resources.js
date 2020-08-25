@@ -27,7 +27,7 @@ const Resources = (props) => {
                 <Circle colorOne='#2FA7E3' colorTwo='#EBEBEA' number={props.NET} />
                 <div className={style.statistic}>
                     <p>{props.NET}%</p>
-                    <span>&infin; &micro;s / &infin; &micro;s</span>
+                    <span><span className={style.symbols}>&infin; &#181;</span>s / <span className={style.symbols}>&infin; &micro;</span>s</span>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 @import './../Styles/box';
-@import './../../fonts/Gilroy/gilroy-bold.css';
+@import './../../fonts/Gilroy/gilroy.css';
 
 .cbs {
     @include box();
@@ -10,7 +10,7 @@
     margin: 16px 0 0 0;
     H3 {
         font-size: 46px;
-        font-family: 'Gilroy-Bold';
+        font-family: 'Gilroy';
         color: #3e445b;
         margin: 0;
         padding: 0;

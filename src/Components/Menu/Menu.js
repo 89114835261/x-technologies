@@ -3,7 +3,7 @@ import style from './Menu.module.scss';
 
 const Menu = (props) => {
     return(
-        <ul>
+        <ul className={style.menu}>
             <li><span>Wallet</span></li>
             <li><span>Staked</span></li>
             <li><span>Ambasdors</span></li>

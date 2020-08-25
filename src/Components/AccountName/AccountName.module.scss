@@ -1,8 +1,8 @@
-@import './../../fonts/Roboto/roboto_thin.css';
-@import './../../fonts/Gilroy/gilroy-bold.css';
+@import './../../fonts/Roboto/roboto.css';
+@import './../../fonts/Gilroy/gilroy.css';
 
 .account {
-    font-family: 'Roboto Thin';
+    font-family: 'Roboto';
     background-image: url('./../../img/icons/main_icon.jpg');
     background-repeat: no-repeat;
     background-position: 16px 0;
@@ -12,27 +12,39 @@
     position: relative;
     SPAN {
         color: #a9abb6;
-        background-image: url('./../../img/icons/connect.jpg');
-        background-repeat: no-repeat;
-        background-position: right 5px;
-        padding: 0 25px 2px 0;
+        padding: 0 20px 2px 0;
+        position: relative;
+        IMG {
+            position: absolute;
+            top: 3px;
+            right: 0;
+            &:hover {
+                cursor: pointer;
+            }
+        }
         SPAN {
             color: #3e445b;
             background: none;
             padding: 0;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     P {
-        font-family: 'Gilroy-Bold';
+        font-family: 'Gilroy';
         font-size: 20px;
-        padding: 0 22px 0 0;
+        padding: 0 20px 0 0;
         margin: 0;
         position: absolute;
         bottom: 0;
-        color: #3e445b;
-        background-image: url('./../../img/icons/copy.jpg');
-        background-repeat: no-repeat;
-        background-position: right;
-
+        IMG {
+            position: absolute;
+            top: 5px;
+            right: 0;
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
 }

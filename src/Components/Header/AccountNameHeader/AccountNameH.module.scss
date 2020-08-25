@@ -1,0 +1,24 @@
+@import './../../../fonts/Gilroy/gilroy.css';
+
+.accountName {
+    font-family: 'Gilroy';
+    font-weight: bold;
+    color: #3E445B;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80px;
+    width: 120px;
+    background-image: url('./../../../img/icons/main_icon.jpg');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 0 30px 0 0;
+    .name {
+        line-height: 80px;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
