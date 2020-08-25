@@ -1,7 +1,8 @@
 @import './../Styles/box';
 @import './../../fonts/Roboto/roboto.css';
-@import './../../fonts/Gilroy/gilroy.css';
+@import './../../fonts/Gilroy/stylesheet.css';
 @import './../../fonts/RobotoThin/roboto_thin.css';
+
 .resources {
     @include box;
     margin: 32px 0 0 0;

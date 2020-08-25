@@ -1,5 +1,5 @@
 @import './../../fonts/Roboto/roboto.css';
-@import './../../fonts/Gilroy/gilroy.css';
+@import './../../fonts/Gilroy/stylesheet.css';
 
 .account {
     font-family: 'Roboto';
@@ -33,6 +33,7 @@
     }
     P {
         font-family: 'Gilroy';
+        font-weight: bold;
         font-size: 20px;
         padding: 0 20px 0 0;
         margin: 0;
