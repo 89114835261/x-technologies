@@ -1,7 +1,7 @@
 @import './../Styles/box';
 @import './../../fonts/Roboto/roboto.css';
 @import './../../fonts/Gilroy/gilroy.css';
-
+@import './../../fonts/RobotoThin/roboto_thin.css';
 .resources {
     @include box;
     margin: 32px 0 0 0;
@@ -47,13 +47,11 @@
     SPAN {
         color: #8B8F9D;
         font-size: 16px;
-        .symbols {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 19px;
-        }
+        font-family: 'Roboto Thin';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
         P {
             margin: 0;
             padding: 0;
