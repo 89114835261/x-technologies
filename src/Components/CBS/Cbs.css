@@ -1,0 +1,42 @@
+@import './../../fonts/Roboto/roboto_thin.css';
+
+.CBS {
+    background-image: url('./../../img/icons/3d_icon_orange.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    top: 42px;
+    right: 23px;
+}
+
+.CBSCH {
+    background-image: url('./../../img/icons/3d_icon_blue.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 42px;
+    right: 23px;
+    width: 41px;
+    height: 41px;
+}
+
+.lockInfo {
+    color: #8b8f9d;
+}
+
+.lockInfo SPAN {
+    padding: 0 0 0 20px;
+    background-position: 0 1px;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Thin';
+}
+
+.lockInfo SPAN:first-child {
+    background-image: url('./../../img/icons/unlock.jpg');
+    margin: 0 10px 0 0;
+}
+
+.lockInfo SPAN:last-child {
+    background-image: url('./../../img/icons/lock.jpg');
+    margin: 0 0 0 10px;
+}

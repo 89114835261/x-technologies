@@ -1,0 +1,22 @@
+@import './../Styles/box';
+@import './../../fonts/Gilroy/gilroy-bold.css';
+
+.cbs {
+    @include box();
+    padding: 32px 0 32px 40px;
+    background-repeat: no-repeat;
+    width: 424px;
+    position: relative;
+    margin: 16px 0 0 0;
+    H3 {
+        font-size: 46px;
+        font-family: 'Gilroy-Bold';
+        color: #3e445b;
+        margin: 0;
+        padding: 0;
+        SPAN {
+            color: #9fa2ae;
+            font-size: 36px
+        }
+    }
+}

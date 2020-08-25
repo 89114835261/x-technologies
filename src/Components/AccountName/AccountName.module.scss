@@ -1,0 +1,38 @@
+@import './../../fonts/Roboto/roboto_thin.css';
+@import './../../fonts/Gilroy/gilroy-bold.css';
+
+.account {
+    font-family: 'Roboto Thin';
+    background-image: url('./../../img/icons/main_icon.jpg');
+    background-repeat: no-repeat;
+    background-position: 16px 0;
+    height: 56px;
+    padding: 0 0 0 88px;
+    margin: 0 0 32px 0;
+    position: relative;
+    SPAN {
+        color: #a9abb6;
+        background-image: url('./../../img/icons/connect.jpg');
+        background-repeat: no-repeat;
+        background-position: right 5px;
+        padding: 0 25px 2px 0;
+        SPAN {
+            color: #3e445b;
+            background: none;
+            padding: 0;
+        }
+    }
+    P {
+        font-family: 'Gilroy-Bold';
+        font-size: 20px;
+        padding: 0 22px 0 0;
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        color: #3e445b;
+        background-image: url('./../../img/icons/copy.jpg');
+        background-repeat: no-repeat;
+        background-position: right;
+
+    }
+}

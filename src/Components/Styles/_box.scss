@@ -1,0 +1,5 @@
+@mixin box {
+    box-shadow: 0 1.49px 1.54px rgba(0, 0, 0, 0.02), 0 4.13px 4.26px rgba(0, 0, 0, 0.025), 0 9.95px 10.25px rgba(0, 0, 0, 0.03), 0 33px 34px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    background-color: #fff;
+}

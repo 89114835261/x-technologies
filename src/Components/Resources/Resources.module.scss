@@ -1,0 +1,56 @@
+@import './../Styles/box';
+@import './../../fonts/Roboto/roboto_thin.css';
+@import './../../fonts/Gilroy/gilroy-bold.css';
+
+.resources {
+    @include box;
+    margin: 32px 0 0 0;
+    padding: 24px;
+    position: relative;
+    H4 {
+        font-family: 'Gilroy-Bold';
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 4%;
+        line-height: 17px;
+        color: #ABADB8;
+    }
+    .wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 12px 0 0 0;
+        .name {
+            font-family: 'Gilroy-Bold';
+            padding: 13px 0 0 0;
+            width: 90px;
+            font-size: 20px;
+        }
+    }
+}
+
+.statistic {
+    display: flex;
+    flex-flow: column wrap;
+    font-family: 'Roboto Thin';
+    margin: 0 0 0 18px;
+    padding: 2px 0 0 0;
+    P {
+        font-family: 'Gilroy-Bold';
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        color: #3E445B;
+    }
+    SPAN {
+        color: #8B8F9D;
+        font-size: 16px;
+        P {
+            margin: 0;
+            padding: 0;
+            display: inline;
+      
+        }
+    }
+}

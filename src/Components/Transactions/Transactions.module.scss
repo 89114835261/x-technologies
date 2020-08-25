@@ -1,0 +1,80 @@
+@import './../Styles/box';
+@import './../../fonts/Gilroy/gilroy-bold.css';
+@import './../../fonts/Roboto/roboto_thin.css';
+
+.wrapper {
+    margin: 0 56px 0 56px;
+    width: 744px;
+    position: relative;
+    H3 {
+        font-family: 'Gilroy-Bold';
+        color: #4F4F4F;
+        margin: 0;
+    }
+}
+
+.menu {
+    height: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    top: 44px;
+    SPAN {
+        font-family: 'Gilroy-Bold';
+        color: #3E445B;
+        font-size: 14px;
+        margin: 0 24px 0 0;
+        padding: 0 0 0 42px;
+    }
+}
+
+.transactions {
+    @include box;
+    margin: 45px 0 0 0;
+    position: relative;
+    padding: 32px 0 0 42px;
+}
+
+.listTitle {
+    display: flex;
+    flex-flow: row nowrap;
+    :nth-child(2) {
+        margin: 0 0 0 20px;
+    }
+    :nth-child(3) {
+        margin: 0 0 0 154px;
+    }
+    :nth-child(4) {
+        margin: 0 0 0 220px;
+    }
+    SPAN {
+        font-family: 'Gilroy-Bold';
+        font-size: 14px;
+        color: #9FA2AE;
+        
+    }
+}
+
+.element {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 40px;
+    border-bottom: solid 1px #F5F6F7;
+    align-items: center;
+    .in {
+        width: 20px;
+        height: 20px;
+        background-image: url('./../../img/icons/in.jpg');
+    }
+    .out {
+        width: 20px;
+        height: 20px;
+        background-image: url('./../../img/icons/out.jpg');
+    }
+    SPAN {
+        font-family: 'Roboto Thin';
+        &:first-child {
+            margin: 0 34px 0 0;
+        }
+    }
+}

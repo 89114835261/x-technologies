@@ -1,0 +1,29 @@
+@import './../../fonts/Gilroy/gilroy-bold.css';
+
+.wrapper {
+    
+    background-color: #fff;
+    height: 52px;
+    position: relative;
+    padding: 28px 0 0 0;
+    DIV {
+        width: 120px;
+        height: 24px;
+        padding: 0;
+        margin: 0;
+        background-image: url('./../../img/icons/title_icon.jpg');
+        background-repeat: no-repeat;
+        text-align: right;
+    }
+    H1 {
+        font-size: 25px;
+        margin: 0;
+        line-height: 25px;
+        padding: 0;
+        font-family: 'Gilroy-Bold';
+        color: #3e445b;
+        SPAN {
+            color: #f8a303;
+        }
+    }
+}
