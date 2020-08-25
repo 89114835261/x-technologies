@@ -4,7 +4,7 @@
 
 .menu {
     @include box;
-    padding: 24px;
+    padding: 24px 24px 12px 24px;
     width: 200px;
     right: -10px;
     margin: -10px 0 0 0;
@@ -40,20 +40,19 @@
         }
     }
     UL {
-        list-style: none;
-        margin: 0;
+        margin: 24px 0 0 0;
         padding: 0;
     }
     LI {
         font-family: 'Gilroy';
         font-weight: bold;
         font-size: 14px;
-        line-height: 17px;
         letter-spacing: 0.04em;
         list-style-position: inside;
         position: relative;
+        height: 40px;
         color: #3E445B;
-        margin: 24px 0 0 0;
+        margin: 0 0 12px 0;
         SPAN {
             position: absolute;
             top: 3px;

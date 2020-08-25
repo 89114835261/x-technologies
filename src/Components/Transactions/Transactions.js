@@ -31,6 +31,15 @@ const Transactions = (props) => {
                         <span>Balance</span>
                     </div>
                     {transactions}
+                    <div className={style.pagination}>
+                        <span>&#60;</span>
+                        <span>1,</span>
+                        <span>2,</span>
+                        <span>3,</span>
+                        <span>...</span>
+                        <span>156</span>
+                        <span>&#62;</span>
+                    </div>
                 </div>  
              
         </div>     

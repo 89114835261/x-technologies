@@ -124,3 +124,28 @@
         }
     }
 }
+
+.pagination {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 40px;
+    justify-content: center;
+    font-family: 'Gilroy';
+    font-weight: normal;
+    font-size: 13px;
+    margin: 15px 0 0 0;
+    SPAN {
+        margin: 0 5px 0 5px;
+        color: #9296A3;
+        &:first-child {
+            color: #3E445B;
+        }
+        &:nth-child(2) {
+            font-weight: bold;
+            color: #3E445B;
+        }
+        &:last-child {
+            color: #3E445B;
+        }
+    }
+}
