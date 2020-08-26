@@ -5,11 +5,12 @@ import Resources from '../Resources/Resources';
 
 const Statistics = (props) => {
     return(
-        <div>
+        <div style={{transition: 'all 1s ease-in-out',opacity: props.statisticOpacity}}>
             <AccountName /> 
-            <Cbs data={props.cbs}/>
-            <Cbs data={props.cbsch}/>
+            <Cbs cbsOpacity={props.cbsOpacity} data={props.cbs}/>
+            <Cbs cbsOpacity={props.cbsOpacity} data={props.cbsch}/>
             <Resources 
+                resourcesOpacity={props.resourcesOpacity}
                 RAM={props.RAM}
                 CPU={props.CPU}
                 NET={props.NET} 

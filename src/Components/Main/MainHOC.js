@@ -9,9 +9,14 @@ class MainHOC extends React.Component {
             cbs: null,
             cbsch: null,
             transactions: null,
-            RAM: '43.20',
-            CPU: '76.20',
-            NET: '100.00'
+            RAM: '0',
+            CPU: '0',
+            NET: '0',
+            resourcesOpacity: 0,
+            headerOpacity: 0,
+            leftSideOpacity: 0,
+            statisticOpacity: 0,
+            transactionsOpacity: 0
         }
     }
 
@@ -44,11 +49,27 @@ class MainHOC extends React.Component {
         Axios.get('/cbs.json').then(response => this.setState({cbs: response.data}));
         Axios.get('/cbsch.json').then(response => this.setState({cbsch: response.data}));
         Axios.get('/Transactions.json').then(response => this.setState({transactions: response.data}))
+        setTimeout(() => this.setState({headerOpacity: 1}), 100);
+        setTimeout(() => this.setState({leftSideOpacity: 1}), 200);
+        setTimeout(() => this.setState({statisticOpacity: 1}), 500);
+        setTimeout(() => this.setState({statisticOpacity: 1}), 500);
+        setTimeout(() => this.setState({transactionsOpacity: 1}), 800);
+        setTimeout(() => this.setState({RAM: '43.20'}), 800);
+        setTimeout(() => this.setState({CPU: '76.20'}), 1000);
+        setTimeout(() => this.setState({NET: '100.00'}), 1200);
+        setTimeout(() => this.setState({resourcesOpacity: 1}), 1200)
     }
     render() {
         if(this.state.cbs && this.state.cbsch && this.state.transactions) {
             return(
                 <Main 
+                resourcesOpacity={this.state.resourcesOpacity}
+                headerOpacity={this.state.headerOpacity}
+                leftSideOpacity={this.state.leftSideOpacity}
+                statisticOpacity={this.state.statisticOpacity}
+                transactionsOpacity={this.state.transactionsOpacity}
+                leftSideHeight={this.state.leftSideHeight}
+                resourcesOpacity={this.state.resourcesOpacity}
                 changeTabsTransactions={this.changeTabsTransactions}
                 elementTransactions={this.elementTransactions}
                 sortTransactions={this.sortTransactions}

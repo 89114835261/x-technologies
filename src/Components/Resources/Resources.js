@@ -10,7 +10,7 @@ const Resources = (props) => {
                 <span className={style.name}>RAM</span>
                 <Circle colorOne='#27AE60' colorTwo='#EBEBEA' number={props.RAM} />
                 <div className={style.statistic}>
-                    <p>{props.RAM}%</p>
+                    <p style={{opacity: props.resourcesOpacity}}>{props.RAM}%</p>
                     <span>30.73 MB / 43.65 MB</span>
                 </div>
             </div>
@@ -18,7 +18,7 @@ const Resources = (props) => {
                 <span className={style.name}>CPU</span>
                 <Circle colorOne='#EB5757' colorTwo='#EBEBEA' number={props.CPU} />
                 <div className={style.statistic}>
-                    <p>{props.CPU}%</p>
+                    <p style={{opacity: props.resourcesOpacity}}>{props.CPU}%</p>
                     <span>&infin; &micro;s / &infin; &micro;s</span>
                 </div>
             </div>
@@ -26,7 +26,7 @@ const Resources = (props) => {
                 <span className={style.name}>NET</span>
                 <Circle colorOne='#2FA7E3' colorTwo='#EBEBEA' number={props.NET} />
                 <div className={style.statistic}>
-                    <p>{props.NET}%</p>
+                    <p style={{opacity: props.resourcesOpacity}}>{props.NET}%</p>
                     <span>&infin; &#181;s / &infin; &micro;s</span>
                 </div>
             </div>

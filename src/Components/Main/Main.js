@@ -11,21 +11,24 @@ const Main = (props) => {
         <div className={style.wrapper}>
             <div className={style.header}>
                 <div className={style.wrapper}>
-                    <Header />
+                    <Header headerOpacity={props.headerOpacity}/>
                 </div>
             </div>
                 <div className={style.contentWrapper}>
-                    <div className={style.leftSide}>
+                    <div style={{opacity: props.leftSideOpacity}} className={style.leftSide}>
                         <Menu />
                     </div>
                     <div className={style.content}>
                         <Statistics 
+                        statisticOpacity={props.statisticOpacity}
+                        resourcesOpacity={props.resourcesOpacity}
                         RAM={props.RAM}
                         CPU={props.CPU}
                         NET={props.NET} 
                         cbsch={props.cbsch} 
                         cbs={props.cbs}/>
                         <Transactions 
+                        transactionsOpacity={props.transactionsOpacity}
                         changeTabsTransactions={props.changeTabsTransactions}
                         elementTransactions={props.elementTransactions}
                         sortTransactions={props.sortTransactions}

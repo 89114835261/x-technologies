@@ -12,7 +12,7 @@ const Header = (props) => {
     }
 
     return(
-        <div className={style.header}>
+        <div style={{opacity: props.headerOpacity}} className={style.header}>
             <Logo />
             <AccountNameH isOpenMenu={isOpenMenu} changeOpenMenu={changeOpenMenu}/>
         </div>

@@ -16,7 +16,7 @@ const Transactions = (props) => {
     })
 
     return(
-        <div className={style.wrapper}>
+        <div className={style.wrapper} style={{opacity: props.transactionsOpacity}}>
             <h3>Transactions</h3>
            
                 <div className={style.menu}>
