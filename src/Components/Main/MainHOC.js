@@ -54,10 +54,10 @@ class MainHOC extends React.Component {
         setTimeout(() => this.setState({statisticOpacity: 1}), 500);
         setTimeout(() => this.setState({statisticOpacity: 1}), 500);
         setTimeout(() => this.setState({transactionsOpacity: 1}), 800);
-        setTimeout(() => this.setState({RAM: '43.20'}), 800);
-        setTimeout(() => this.setState({CPU: '76.20'}), 1000);
-        setTimeout(() => this.setState({NET: '100.00'}), 1200);
-        setTimeout(() => this.setState({resourcesOpacity: 1}), 1200)
+        setTimeout(() => this.setState({RAM: '43.20'}), 1100);
+        setTimeout(() => this.setState({CPU: '76.20'}), 1400);
+        setTimeout(() => this.setState({NET: '100.00'}), 1700);
+        setTimeout(() => this.setState({resourcesOpacity: 1}), 1900)
     }
     render() {
         if(this.state.cbs && this.state.cbsch && this.state.transactions) {
