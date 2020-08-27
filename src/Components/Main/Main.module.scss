@@ -25,6 +25,7 @@
     display: flex;
     flex-flow: row nowrap;
     z-index: 1;
+    height: auto;
 }
 
 .leftSide {
@@ -32,7 +33,7 @@
     padding: 0 0 0 60px;
     border-right: solid 1px rgba(62, 68, 91, 0.1);
     width: 240px;
-    overflow: hidden;
+    min-height: calc(100vh - 160px);
     transition: all 1s ease-in-out;
 }
 
